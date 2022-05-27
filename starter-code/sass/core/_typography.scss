@@ -1,0 +1,58 @@
+@use './variables' as *;
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+h1 {
+    font-size: 150px;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+    @media (max-width: 650px) {
+        font-size: 80px;
+    }
+}
+h2 {
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+    @media (max-width: 375px) {
+        font-size: 56px;
+    }
+}
+h3 {
+    font-size: 56px;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+}
+h4 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+}
+h5 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.sub-head-1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+    color: $color-3;
+    
+}
+.sub-head-2 {
+    font-size: 1.1428571428571428571428571428571rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $color-2;
+}
+p {
+    font-size: 1.125rem;
+    font-family: 'Bellefair', serif;
+}
+a {
+    text-decoration: none;
+}
+// Nav Text 16px
+
+// Interactive Elements

@@ -1,0 +1,200 @@
+@use '../core/variables' as *;
+body.technology {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 400px) {
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+    @media (min-width: 800px) {
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+    }
+    min-height: 100vh;
+    margin: 0;
+    padding: {
+        left: 0px;
+        right: 0px;
+    }
+    @media (min-width: 650px) {
+        padding: {
+            right: 0;
+        }
+    }
+    .header {
+        nav {
+            a {
+                @media (min-width: 650px) {
+                    height: 96px;
+                }
+            }
+            @media (min-width: 650px) {
+                height: 96px;
+            }
+        }
+        @media (min-width: 1190px) {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin-bottom: 76px;
+        }
+        padding: {
+            left: 24px;
+            right: 24px
+        };
+        @media (min-width: 650px) {
+            height: 96px;
+            padding: {
+                right: 0;
+            }
+            margin-top: 0;
+        }
+        @media (min-width: 1150px) {
+            padding: {
+                right: 24px
+            };
+            margin-top: 24px;
+        }
+    }
+}
+// Component Sub Head
+.technology__subtitle {
+    @media (min-width: 650px) {
+        text-align: left;
+        padding: {
+            left: 24px;
+            right: 24px;
+        }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    height: 19px;
+    margin-bottom: 32px;
+    span {
+        font-weight: bold;
+        font-size: 16px;
+        opacity: 0.25;
+        letter-spacing: 2.7px;
+        @media (min-width: 650px) {
+            font-size: 20px;
+        }
+    }
+    p {
+        letter-spacing: 2.7px;
+        font-size: 16px;
+        @media (min-width: 650px) {
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 650px) {
+        justify-content: flex-start;
+    }
+    @media (min-width: 1140px) {
+        margin-bottom: 64px;
+        margin-left: 90px;
+    }
+}
+.technology__content {
+    @media (min-width: 1150px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px
+    }
+}
+.technology__content-image {
+    text-align: center;
+    margin-bottom: 34px;
+    img {
+        max-width: 100%;
+        display: block;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+        &:nth-child(1) {
+            display: none;
+        }
+    }
+    @media (min-width: 650px) {
+        margin-bottom: 56px;
+    }
+    @media (min-width: 1150px) {
+        order: 1;
+    }
+}
+.technology__content-info {
+    padding: {
+        left: 24px;
+        right: 24px;
+    }
+    @media (min-width: 1150px) {
+        flex: 1;
+        display: flex;
+        gap: 80px;
+    }
+}
+.slider {
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        @media (min-width: 650px) {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+        }
+        color: $color-3;
+        border: 1px solid transparentize($color-3, 0.75) ;
+        font-size: 1rem;
+        font-family: 'Bellefair', serif;
+        &.active {
+            background-color: $color-3;
+            color: $color-1;
+            font-weight: bold;
+        }
+    }
+    @media (min-width: 650px) {
+        margin-bottom: 44px;
+    }
+    @media (min-width: 1150px) {
+        flex-direction: column;
+    }
+}
+.technology__title {
+    text-align: center;
+    .sub-head-2 {
+        font-size: 14px;
+        margin-bottom: 9px;
+        @media (min-width: 650px) {
+            font-size: 16px;
+            letter-spacing: 2.7px;
+        }
+    }
+    .sub-head-1 {
+        font-size: 24px;
+        @media (min-width: 650px) {
+            font-size: 40px;
+        }
+    }
+    p {
+        color: $color-2;
+        font-size: 15px;
+        line-height: 1.67;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @media (min-width: 650px) {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+    }
+}
